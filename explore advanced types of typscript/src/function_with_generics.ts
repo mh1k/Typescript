@@ -44,6 +44,7 @@
     }
 
     interface StudentDetail {
+        id?: number;
         name: string;
         email: string
     }
