@@ -6,7 +6,8 @@
     // Constraints allow you to specify that a generic type parameter must meet certain criteria, such as implementing a particular interface, having a specific method, or extending a specific class.
 
 
-    const addCourse = <T extends { id: number; name: string; email: string;}>(student: T) => {
+
+    const addCourse = <T extends { id: number; name: string; email: string; }>(student: T) => {
         const course = "Next level web development";
         return { ...student, course }
     }

@@ -31,6 +31,9 @@
         return obj[key]
     }
 
+    /* The line `console.log(getPropertyValue(user, "address"));` is calling a generic function named
+    `getPropertyValue`. This function takes two arguments: an object `obj` of type `X` and a key
+    `key` of type `Y, where Y extends keyof X`. */
     console.log(getPropertyValue(user, "address"));
 
 
